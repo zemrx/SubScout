@@ -65,18 +65,19 @@ SubScout includes an intelligent anomaly detector that filters out false positiv
 
 ## Installation
 
-```bash
+
 # Clone or download the repository
+```
 cd SubScout
-
+```
 # Install dependencies
+```
 pip install -r requirements.txt
-
+```
 OR
 
 # install with pip
-
-```
+``
 pip install git+https://github.com/zemrx/SubScout.git@lib
 ```
 
