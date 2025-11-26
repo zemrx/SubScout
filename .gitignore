@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# SubScout Results & Output
+*.txt
+*.json
+*.csv
+!requirements.txt
+!config.yaml
+!README.md
+
+# Anomaly Files
+*_anomalies.*
+*anomalies.*
+
+# Test Files
+test_*.txt
+test_*.json
+test_*.csv
+wildcard_test.*
+http_probe_test.*
+*_test.*
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# API Keys (if accidentally committed)
+.env
+*.key
+
+# OS
+Thumbs.db
+.DS_Store
+
+# No to ignore
+!default.txt

@@ -1,0 +1,32 @@
+
+
+api_keys:
+  securitytrails: ""
+  virustotal: ""
+  shodan: ""
+  censys_id: ""
+  censys_secret: ""
+  binaryedge: ""
+  passivetotal_user: ""
+  passivetotal_key: ""
+  fullhunt: ""
+  netlas: ""
+
+settings:
+  dns_resolvers:
+    - "1.1.1.1"
+    - "8.8.8.8"
+    - "8.8.4.4"
+    - "9.9.9.9"
+  
+  passive_concurrency: 10
+  
+  active_concurrency: 100
+  
+  http_timeout: 10
+  
+  dns_timeout: 5
+  
+  retry_attempts: 3
+  
+  user_agent: "SubScout/1.0 (Subdomain Reconnaissance)"
