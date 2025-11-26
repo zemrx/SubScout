@@ -11,6 +11,7 @@ api_keys:
   passivetotal_key: ""
   fullhunt: ""
   netlas: ""
+  chaos: ""
 
 settings:
   dns_resolvers:
