@@ -77,7 +77,7 @@ pip install -r requirements.txt
 OR
 
 # install with pip
-``
+```
 pip install git+https://github.com/zemrx/SubScout.git@lib
 ```
 
