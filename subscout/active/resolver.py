@@ -2,7 +2,7 @@ import asyncio
 import dns.resolver
 import dns.asyncresolver
 from typing import List, Optional, Set
-from config import get_config
+from ..config import get_config
 
 class DNSResolver:
     def __init__(self, resolvers: Optional[List[str]] = None):

@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subscout"
+version = "1.0.0"
+description = "Advanced Subdomain Enumeration Tool"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+keywords = ["subdomain", "enumeration", "security", "reconnaissance", "dns"]
+authors = [
+    {name = "Hussein Hady"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Security",
+    "Topic :: Internet :: Name Service (DNS)",
+]
+dependencies = [
+    "aiohttp",
+    "dnspython",
+    "colorama",
+    "beautifulsoup4",
+    "pyyaml",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/SubScout"
+Repository = "https://github.com/yourusername/SubScout"
+Issues = "https://github.com/yourusername/SubScout/issues"
+
+[project.scripts]
+subscout = "subscout.main:main"
+
+[tool.setuptools]
+packages = ["subscout", "subscout.passive", "subscout.active", "subscout.utils"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+subscout = ["*.yaml", "wordlists/*"]

@@ -2,7 +2,7 @@
 import asyncio
 from typing import List, Dict, Set, Tuple
 from collections import defaultdict
-from utils.http_client import HTTPClient
+from .http_client import HTTPClient
 
 class AnomalyDetector:
 

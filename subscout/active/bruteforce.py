@@ -1,9 +1,9 @@
 import asyncio
 from typing import List, Set, Optional
 from pathlib import Path
-from active.resolver import DNSResolver
-from active.wildcard import WildcardDetector
-from config import get_config
+from .resolver import DNSResolver
+from .wildcard import WildcardDetector
+from ..config import get_config
 
 class BruteForcer:
     def __init__(self, domain: str, wordlist_path: str, concurrency: Optional[int] = None):

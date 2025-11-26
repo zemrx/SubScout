@@ -65,12 +65,37 @@ SubScout includes an intelligent anomaly detector that filters out false positiv
 
 ## Installation
 
+### Method 1: Install from Source (Recommended)
+
 ```bash
 # Clone or download the repository
 cd SubScout
 
-# Install dependencies
+# Install in editable mode
+pip install -e .
+
+# Or install normally
+pip install .
+```
+
+### Method 2: Install Dependencies Only
+
+```bash
 pip install -r requirements.txt
+```
+
+## Usage
+
+After installation, you can run SubScout directly from the command line:
+
+```bash
+subscout example.com
+```
+
+Or run the script directly if you didn't install the package:
+
+```bash
+python SubScout.py example.com
 ```
 
 ## Configuration

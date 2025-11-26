@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List
-from utils.http_client import HTTPClient
+from ..utils.http_client import HTTPClient
 
 class PassiveSource(ABC):
     def __init__(self, name: str):
@@ -13,7 +13,7 @@ class PassiveSource(ABC):
     
     def is_available(self) -> bool:
         if self.requires_api_key:
-            from config import get_config
+            from ..config import get_config
             config = get_config()
             return config.has_api_key(self.name.lower())
         return True

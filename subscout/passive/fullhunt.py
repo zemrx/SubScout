@@ -1,8 +1,8 @@
 
 from typing import List
-from passive.base import PassiveSource
-from utils.http_client import HTTPClient
-from config import get_config
+from .base import PassiveSource
+from ..utils.http_client import HTTPClient
+from ..config import get_config
 
 class FullHunt(PassiveSource):
 

@@ -1,7 +1,7 @@
 import random
 import string
 from typing import Optional, Set
-from active.resolver import DNSResolver
+from .resolver import DNSResolver
 
 class WildcardDetector:
     def __init__(self, domain: str, resolver: DNSResolver):

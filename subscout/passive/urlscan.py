@@ -1,7 +1,7 @@
 
 from typing import List
-from passive.base import PassiveSource
-from utils.http_client import HTTPClient
+from .base import PassiveSource
+from ..utils.http_client import HTTPClient
 
 class URLScan(PassiveSource):
 
